@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Профиль Тимофеев В.А.</title>
+    <style>
+        body {
+            font-family: Times New Roman;
+            margin: 0;
+            padding: 0;
+            background-color: #edeef0;
+        }
+        header {
+            background-color: #4d7198;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        main {
+            padding: 2em;
+        }
+        footer {
+            background-color: #4d7198;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .profile-container {
+            display: grid;
+            grid-template-columns: 1fr 250px 1fr 1fr 1fr;
+            grid-gap: 10px;
+            align-items: start;
+        }
+        .profile-container img {
+            grid-row: 1 / span 5;
+            grid-column: 1 / 2;
+        }
+        .labels {
+            display: flex;
+            flex-direction: column;
+        }
+        .values {
+            display: flex;
+            flex-direction: column;
+        }
+        .labels h2, .values p {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        .value {
+            color: #964b00;
+        }
+        .bold {
+            font-weight: bold;
+        }
+		.large-text {
+            font-size: 1.5em;
+		}
+		.profile-button {
+            grid-column: 1 / 2;
+            grid-row: 6 / 7;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #000000;
+            background-color: #edeef0;
+            border: 3px solid #964b00;
+            border-radius: 5px;
+            cursor: pointer;
+			text-decoration: none;
+        }
+        .profile-button:hover {
+            background-color: #b8bbc2;
+        }
+        .filled-button {
+            grid-column: 4 / 5;
+            grid-row: 1 / 2;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #008000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+			text-decoration: none;
+        }
+        .filled-button:hover {
+            background-color: #2a5c03;
+        }
+		.profile-button-link, .filled-button-link {
+			text-decoration: none;
+			color: inherit;
+			display: inline-block;
+			margin-bottom: 20px;
+		}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ВСоединении</h1>
+    </header>
+    <main>
+        <div class="profile-container">
+            <img src="C:\Users\vladi\Desktop\Картинка\250.jpg" alt="Фото" width="250">
+            <div class="labels">
+                <h2>Фамилия:</h2>
+                <h2>Имя:</h2>
+                <h2>Отчество:</h2>
+                <h2>Дата рождения:</h2>
+                <h2>Город:</h2>
+                <h2>Образование:</h2>
+            </div>
+            <div class="values">
+				<p class="value bold large-text">Тимофеев</p>
+                <p class="value bold large-text">Владислав</p>
+                <p class="value bold large-text">Александрович</p>
+                <p class="value bold large-text">26.04.1997</p>
+                <p class="value bold large-text">Ижевск</p>
+				<p class="value bold large-text">Операционный логист</p>
+            </div>
+        </div>
+		<a href="https://prmotion.me/vk/votes" class="profile-button-link" target="_blank">
+			<button class="profile-button">Подкрутить голоса</button>
+		</a>
+		<a href="https://likes.partnerkin.com/shop/discount/vk/1/friend" class="filled-button-link" target="_blank">
+			<button class="filled-button">Подкрутить друзей</button>
+		</a>
+		<div>
+		<a href="https://t.me/durov_russia" target="_blank">Узнать как дела у Дурилки, вылетел он из Франции или нам нагло лгут</a>
+		</div>
+    </main>
+    <footer>
+        <p>ВСоединении © Пашка Дурилка</p>
+    </footer>
+</body>
+</html>
